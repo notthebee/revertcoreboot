@@ -2,12 +2,12 @@
 Congratulations! You forgot to back up your original BIOS dump, and now you're stuck with coreboot forever...right? Not so fast.  
 Even without the SPI dump, you can still go back to the original BIOS, which is really useful if you experience some problems or decide to install macOS.  
 ### Requirements
-* .FL1 file from the modified BIOS v1.46 - http://www.mcdonnelltech.com/X220_v1.46_Modified_BIOS.zip
+* `$01CB000.FL1` file from this repository
 * X220 running Linux with `flashrom` package installed, as well as kernel option `iomem=relaxed` set in bootloader
 ### WARNING
 Only do this if you know what you're doing, be sure to have a Raspberry Pi and a Pomona clip handy to re-flash your SPI chip in case you mess up. I am not responsible for any damage your computer may suffer during this process.
 ### The process
-Take the *.FL1 file from the modified BIOS v1,46, e.g. $01C9100.FL1, and truncate it to exactly 8MByte:  
+Take the `$01CB000.FL1` file, and truncate it to exactly 8MByte:  
 ```
 dd if=\$01C9100.FL1 of=x220_spi.bin bs=$((0x800000)) count=1
 ```
