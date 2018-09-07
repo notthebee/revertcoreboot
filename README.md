@@ -1,6 +1,6 @@
 # Reverting coreboot installation on Thinkpad X220 without an original SPI dump
 Congratulations! You forgot to back up your original BIOS dump, and now you're stuck with coreboot forever...right? Not so fast.  
-Even without the original BIOS dump, you can still install the original BIOS, which is really useful if you experience some problems or decide to install macOS.  
+Even without the SPI dump, you can still install the original BIOS, which is really useful if you experience some problems or decide to install macOS.  
 ### Requirements
 * .FL1 file from the modified BIOS v1.46 - http://www.mcdonnelltech.com/X220_v1.46_Modified_BIOS.zip
 * X220 running Linux with `flashrom` package installed, as well as kernel option `iomem=relaxed` set in bootloader
