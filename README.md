@@ -9,7 +9,7 @@ Only do this if you know what you're doing, be sure to have a Raspberry Pi and a
 ### The process
 Take the `$01CB000.FL1` file, and truncate it to exactly 8MByte:  
 ```
-dd if=\$01C9100.FL1 of=x220_spi.bin bs=$((0x800000)) count=1
+dd if=\$01CB000.FL1 of=x220_spi.bin bs=$((0x800000)) count=1
 ```
 Backup the old content:  
 ```
