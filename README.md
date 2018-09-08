@@ -11,7 +11,7 @@ Take the `$01CB000.FL1` file, and truncate it to exactly 8MByte:
 ```
 dd if=\$01CB000.FL1 of=x220_spi.bin bs=$((0x800000)) count=1
 ```
-Backup the old content:  
+Backup the old content **and put it on an external storage**:  
 ```
 flashrom -p internal:laptop=force_I_want_a_brick -r file.rom
 ```
