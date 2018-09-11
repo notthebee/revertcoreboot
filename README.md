@@ -25,7 +25,7 @@ echo -e "000000:4fffff dummy\n500000:7fffff bios" > x220.layout
 ```
 Update the BIOS portion in the SPI flash
 ```
-flashrom -p internal:laptop=force_I_want_a_brick -c MX25L6405 --layout t520.layout -i bios -w x220_spi.bin
+flashrom -p internal:laptop=force_I_want_a_brick -c MX25L6405 --layout x220.layout -i bios -w x220_spi.bin
 ```
 Done!
   
